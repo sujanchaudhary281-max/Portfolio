@@ -11,7 +11,7 @@ const nav = [
 const socials = [
   { icon: 'lucide:twitter', url: 'https://x.com/sujan_96022', label: 'Twitter' },
   { icon: 'uit:linkedin-alt', url: 'https://www.linkedin.com/in/sujan-chaudhary-a6126b3b4/', label: 'LinkedIn' },
-  { icon: 'mingcute:github-line', url: 'https://github.com/Sujan299', label: 'GitHub' },
+  { icon: 'mingcute:github-line', url: 'https://github.com/sujanchaudhary281-max', label: 'GitHub' },
 ];
 
 export default function Footer() {

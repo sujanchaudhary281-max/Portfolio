@@ -3,6 +3,7 @@ import { Icon } from '@iconify/react';
 import Card from './UI/Card';
 import Button from './UI/Button';
 import projects from '../assets/projects.json';
+import FadeIn from './FadeIn';
 
 export default function FeaturedProjects() {
   return (
@@ -23,8 +24,9 @@ export default function FeaturedProjects() {
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {projects.slice(0, 3).map((p) => (
-            <Card key={p.id} className="flex flex-col !p-0 overflow-hidden group">
+          {projects.slice(0, 3).map((p, i) => (
+            <FadeIn key={p.id} delay={i * 100}>
+              <Card className="flex flex-col !p-0 overflow-hidden group h-full">
               <div className="relative h-48 overflow-hidden">
                 <img src={p.imgUrl} alt={p.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-canvas-card via-canvas-card/50 to-transparent" />
@@ -49,6 +51,7 @@ export default function FeaturedProjects() {
                 </div>
               </div>
             </Card>
+            </FadeIn>
           ))}
         </div>
       </div>

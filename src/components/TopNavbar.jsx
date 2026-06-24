@@ -36,7 +36,7 @@ export default function TopNavbar() {
                     <hr />
                     <ul>
                         <h2 className='font-bold mb-4 text-2xl'>Socials</h2>
-                        <li className='mb-6'><Link to="https://github.com/Sujan299" target='_blank' className='transition-all ease-in-out duration-150 hover:pl-2 h-6 flex items-center'><Icon icon="mingcute:github-line" className='inline mr-1 text-emerald-500' height={24} />Github</Link></li>
+                        <li className='mb-6'><Link to="https://github.com/sujanchaudhary281-max" target='_blank' className='transition-all ease-in-out duration-150 hover:pl-2 h-6 flex items-center'><Icon icon="mingcute:github-line" className='inline mr-1 text-emerald-500' height={24} />Github</Link></li>
                         <li className='mb-6'><Link to="https://www.linkedin.com/in/sujan-chaudhary-a8a549208/" target='_blank' className='transition-all ease-in-out duration-150 hover:pl-2 h-6 flex items-center'><Icon icon="uit:linkedin-alt" className='inline mr-1 text-indigo-500' height={24} />Linkedin</Link></li>
                         <li className=''><Link to="" target='_blank' className='transition-all ease-in-out duration-150 hover:pl-2 h-6 flex items-center'><Icon icon="entypo-social:twitter" height={24} className='inline mr-1 text-blue-600' />Twitter</Link></li>
                     </ul>
