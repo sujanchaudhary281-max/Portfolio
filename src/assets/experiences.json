@@ -4,19 +4,23 @@
         "companyName": "Sajilo Life Pvt Ltd",
         "role": "Frontend Developer",
         "period": "May 2025 - May 2026",
-        "desc": "Worked as a frontend developer building scalable web SaaS products and mobile application interfaces using React, Next.js, and React Native.",
+        "desc": "Worked as a frontend developer building scalable web products and mobile application interfaces using React, Next.js, and React Native.",
         "achievements": [
             {
                 "id": 1,
-                "desc": "Developed and maintained production-grade SaaS dashboards with React and Next.js."
+                "desc": "Created and implemented Figma-based designs for e-commerce and ride-sharing platforms, supporting the full development lifecycle from planning to deployment."
             },
             {
                 "id": 2,
-                "desc": "Built cross-platform mobile features using React Native."
+                "desc": "Partnered with backend engineers to integrate APIs, build new functionalities, and deliver high-quality software solutions."
             },
             {
                 "id": 3,
-                "desc": "Collaborated with backend and design teams to deliver pixel-perfect, responsive UIs."
+                "desc": "Collaborated with distributed teams to diagnose, track, and resolve issues, enhancing application reliability and overall user satisfaction."
+            },
+            {
+                "id": 4,
+                "desc": "Leveraged Git and GitHub for source control and team collaboration while working within Agile development processes and sprint-based workflows."
             }
         ],
         "companyThinks": null

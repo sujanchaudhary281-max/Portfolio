@@ -23,6 +23,7 @@ const skills = {
   ],
   'Dev Tools': [
     { name: 'Git & GitHub', icon: 'skill-icons:github-dark' },
+    { name: 'Docker', icon: 'skill-icons:docker' },
     { name: 'Vite', icon: 'skill-icons:vite-dark' },
     { name: 'Postman', icon: 'skill-icons:postman' },
   ],

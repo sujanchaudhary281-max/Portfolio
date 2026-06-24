@@ -6,7 +6,7 @@ const channels = [
   { icon: 'lucide:twitter', label: 'Twitter', value: '@sujan_96022', href: 'https://x.com/sujan_96022', color: 'from-blue-400 to-blue-600' },
   { icon: 'uit:linkedin-alt', label: 'LinkedIn', value: 'Sujan Chaudhary', href: 'https://www.linkedin.com/in/sujan-chaudhary-a6126b3b4/', color: 'from-sky-400 to-blue-500' },
   { icon: 'mingcute:github-line', label: 'GitHub', value: 'Sujan299', href: 'https://github.com/Sujan299', color: 'from-gray-300 to-gray-500' },
-  { icon: 'lucide:mail', label: 'Email', value: 'sujanchaudhary281@gmail.com', href: 'mailto:sujanchaudhary281@gmail.com', color: 'from-primary to-primary-light' },
+  { icon: 'lucide:mail', label: 'Email', value: 'sujanchaudhary281@gmail.com', href: null, color: 'from-primary to-primary-light' },
 ];
 
 export default function HomeContact() {
@@ -34,12 +34,12 @@ export default function HomeContact() {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-8 items-stretch">
           {/* Channels - left */}
           <div className="lg:col-span-2 flex flex-col justify-between gap-3">
-            {channels.map((c) => (
-              <a
+            {channels.map((c) => {
+              const Tag = c.href ? 'a' : 'div';
+              return (
+              <Tag
                 key={c.label}
-                href={c.href}
-                target="_blank"
-                rel="noopener noreferrer"
+                {...(c.href ? { href: c.href, target: '_blank', rel: 'noopener noreferrer' } : {})}
                 className="group flex items-center gap-4 rounded-xl border border-hairline bg-canvas-card/60 p-4 transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_25px_rgba(163,230,53,0.06)] hover:-translate-y-0.5"
               >
                 <div className={`flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br ${c.color} text-white shadow-lg group-hover:scale-110 transition-transform duration-300`}>
@@ -49,8 +49,9 @@ export default function HomeContact() {
                   <p className="text-[11px] text-mute font-medium">{c.label}</p>
                   <p className="text-sm font-semibold text-ink">{c.value}</p>
                 </div>
-              </a>
-            ))}
+              </Tag>
+              );
+            })}
           </div>
 
           {/* Form - right */}
