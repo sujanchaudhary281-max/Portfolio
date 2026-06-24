@@ -2,6 +2,7 @@
     {
         "id": 1,
         "title": "Sujan.dev blog",
+        "description": "A full-stack blogging platform with AI-powered content suggestions, user authentication via OAuth, and a rich text editor for publishing articles.",
         "imgUrl": "https://64.media.tumblr.com/themes/screenshots/sonBy1pX1YoDmioG_o8.png",
         "techStacks": "openai, React, node, express, mongodb, OAUTH",
         "githubLink": "https://github.com/Sujan299/blog_app",
@@ -10,6 +11,7 @@
     {
         "id": 2,
         "title": "Typing application",
+        "description": "A real-time multiplayer typing speed test app with live leaderboard, WebSocket-based room system, and competitive game modes.",
         "imgUrl": "https://www.blog.typingspeedtestonline.com/wp-content/uploads/2021/11/screen-0.jpg",
         "techStacks": "Web socket, SOCKET.io, OAUTH, MERN",
         "githubLink": "https://github.com/Sujan299/type_fast_app",
@@ -18,6 +20,7 @@
     {
         "id": 3,
         "title": "News App",
+        "description": "A dynamic news aggregation platform with real-time updates, category filtering, JWT authentication, and personalized reading feeds.",
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcXIMNLyX4OaYpEQkjrrcLw9MBeP58i9HuRA&s",
         "techStacks": "JWT, Web socket, OAUTH, MERN stack",
         "githubLink": "https://github.com/Sujan299/NPL-news",

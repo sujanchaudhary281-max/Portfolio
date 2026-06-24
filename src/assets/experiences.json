@@ -1,9 +1,31 @@
 [
     {
         "id": 1,
+        "companyName": "Sajilo Life Pvt Ltd",
+        "role": "Frontend Developer",
+        "period": "May 2025 - May 2026",
+        "desc": "Worked as a frontend developer building scalable web SaaS products and mobile application interfaces using React, Next.js, and React Native.",
+        "achievements": [
+            {
+                "id": 1,
+                "desc": "Developed and maintained production-grade SaaS dashboards with React and Next.js."
+            },
+            {
+                "id": 2,
+                "desc": "Built cross-platform mobile features using React Native."
+            },
+            {
+                "id": 3,
+                "desc": "Collaborated with backend and design teams to deliver pixel-perfect, responsive UIs."
+            }
+        ],
+        "companyThinks": null
+    },
+    {
+        "id": 2,
         "companyName": "Tech Skills | Coach",
         "role": "MERN Tutor",
-        "period":"July 2024 - Dec 2024",
+        "period": "July 2024 - Dec 2024",
         "desc": "I have successfully taught three batches of MERN & while teaching MERN to students it has helped me to strengthen my basics from core, also I learned to adapt new concepts quickly.",
         "achievements": [
             {
