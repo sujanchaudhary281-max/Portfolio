@@ -43,10 +43,12 @@ export default function FeaturedProjects() {
                   <a href={p.githubLink} target="_blank" rel="noopener noreferrer" className="flex-1">
                     <Button variant="secondary" className="w-full text-xs !px-3 !py-2"><Icon icon="mingcute:github-line" width="14" /> Code</Button>
                   </a>
-                  {p.liveLink && (
+                  {p.liveLink ? (
                     <a href={p.liveLink} target="_blank" rel="noopener noreferrer" className="flex-1">
                       <Button className="w-full text-xs !px-3 !py-2">Live <Icon icon="lucide:external-link" width="12" /></Button>
                     </a>
+                  ) : (
+                    <Button disabled className="flex-1 text-xs !px-3 !py-2 opacity-40 cursor-not-allowed">Under Maintenance</Button>
                   )}
                 </div>
               </div>

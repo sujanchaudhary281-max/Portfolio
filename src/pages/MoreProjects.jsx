@@ -81,7 +81,7 @@ export default function MoreProjects() {
                           <Button className="w-full text-xs !px-3 !py-1.5">Live <Icon icon="lucide:external-link" width="12" /></Button>
                         </a>
                       ) : (
-                        <Button variant="secondary" disabled className="flex-1 text-xs !px-3 !py-1.5 opacity-40">Offline</Button>
+                        <Button disabled className="flex-1 text-xs !px-3 !py-1.5 opacity-40 cursor-not-allowed">Under Maintenance</Button>
                       )}
                     </div>
                   </div>
