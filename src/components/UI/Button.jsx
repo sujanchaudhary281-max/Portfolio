@@ -1,13 +1,13 @@
 const variants = {
-  primary: 'bg-primary hover:bg-primary-light text-canvas font-semibold btn-glow hover:scale-[1.02] active:scale-[0.98]',
-  secondary: 'border border-hairline-strong hover:border-primary text-body hover:text-primary hover:bg-primary/5',
-  ghost: 'text-body hover:text-primary',
+  primary: 'bg-primary hover:bg-primary-light text-canvas font-medium',
+  secondary: 'border border-hairline-strong text-ink hover:border-primary/60 hover:bg-white/[0.03]',
+  ghost: 'text-body hover:text-ink',
 };
 
 export default function Button({ children, variant = 'primary', className = '', ...props }) {
   return (
     <button
-      className={`inline-flex items-center justify-center gap-2 rounded-pill px-6 py-2.5 text-sm transition-all duration-300 ${variants[variant] || variants.primary} ${className}`}
+      className={`inline-flex items-center justify-center gap-2 rounded-lg px-5 py-2.5 text-sm transition-colors duration-200 ${variants[variant] || variants.primary} ${className}`}
       {...props}
     >
       {children}

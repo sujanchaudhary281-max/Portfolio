@@ -18,25 +18,26 @@ export default function MoreProjects() {
   });
 
   return (
-    <div className="min-h-screen py-12 sm:py-20">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+    <div className="min-h-screen py-16 sm:py-20">
+      <div className="mx-auto max-w-5xl px-6">
         <FadeIn>
           <div className="mb-10">
-            <h1 className="font-display text-3xl sm:text-4xl font-bold tracking-tight" style={{ letterSpacing: '-0.025em' }}>
-              Project <span className="gradient-text">Archive</span>
+            <p className="mb-3 text-xs font-medium uppercase tracking-[0.14em] text-primary">Archive</p>
+            <h1 className="font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
+              Project archive
             </h1>
-            <p className="mt-2 text-sm text-body max-w-lg">All projects I've built — web apps, mobile apps, and open-source tools.</p>
+            <p className="mt-3 max-w-lg text-sm leading-relaxed text-body">All projects I've built — web apps, mobile apps, and open-source tools.</p>
           </div>
         </FadeIn>
 
         <FadeIn delay={100}>
-          <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between mb-8 pb-6 border-b border-hairline">
+          <div className="mb-8 flex flex-col items-start justify-between gap-4 border-b border-hairline pb-6 sm:flex-row sm:items-center">
             <div className="flex flex-wrap gap-2">
               {allTechs.slice(0, 6).map((tech) => (
                 <button
                   key={tech}
                   onClick={() => setSelectedTech(tech)}
-                  className={`rounded-pill px-4 py-1.5 text-xs font-semibold transition-all ${selectedTech === tech ? 'bg-primary text-canvas btn-glow' : 'border border-hairline text-body hover:text-ink hover:border-hairline-strong'}`}
+                  className={`rounded-lg px-3.5 py-1.5 text-xs font-medium transition-colors ${selectedTech === tech ? 'bg-primary text-canvas' : 'border border-hairline text-body hover:text-ink hover:border-hairline-strong'}`}
                 >
                   {tech}
                 </button>
@@ -49,7 +50,7 @@ export default function MoreProjects() {
                 placeholder="Search..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="w-full rounded-pill border border-hairline bg-canvas-soft pl-9 pr-4 py-2 text-xs text-ink placeholder:text-mute/60 outline-none focus:border-primary"
+                className="w-full rounded-lg border border-hairline bg-canvas-soft pl-9 pr-4 py-2 text-xs text-ink placeholder:text-mute outline-none transition-colors focus:border-primary/60"
               />
             </div>
           </div>
@@ -58,21 +59,20 @@ export default function MoreProjects() {
         {filtered.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {filtered.map((p, i) => (
-              <FadeIn key={p.id} delay={i * 70}>
-                <Card className="flex flex-col !p-0 overflow-hidden group h-full">
-                  <div className="relative h-44 overflow-hidden">
-                    <img src={p.imgUrl} alt={p.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-canvas-card via-canvas-card/40 to-transparent" />
+              <FadeIn key={p.id} delay={i * 60}>
+                <Card className="group flex h-full flex-col !p-0 overflow-hidden">
+                  <div className="relative h-44 overflow-hidden border-b border-hairline">
+                    <img src={p.imgUrl} alt={p.title} loading="lazy" className="h-full w-full object-cover" />
                   </div>
                   <div className="flex flex-1 flex-col p-4">
-                    <div className="flex flex-wrap gap-1.5 mb-2">
+                    <div className="mb-2 flex flex-wrap gap-1.5">
                       {p.techStacks.split(',').map((t) => (
-                        <span key={t} className="rounded-pill bg-primary/10 border border-primary/20 px-2 py-0.5 text-[10px] font-semibold text-primary">{t.trim()}</span>
+                        <span key={t} className="rounded-md border border-hairline px-2 py-0.5 text-[10px] font-medium text-body">{t.trim()}</span>
                       ))}
                     </div>
-                    <h3 className="font-display text-base font-bold text-ink mb-1">{p.title}</h3>
-                    <p className="text-xs text-body leading-relaxed line-clamp-2 mb-2">{p.description}</p>
-                    <div className="mt-auto flex gap-2 pt-3">
+                    <h3 className="mb-1 font-display text-base font-semibold text-ink">{p.title}</h3>
+                    <p className="mb-3 line-clamp-2 text-xs leading-relaxed text-body">{p.description}</p>
+                    <div className="mt-auto flex gap-2 pt-1">
                       <a href={p.githubLink} target="_blank" rel="noopener noreferrer" className="flex-1">
                         <Button variant="secondary" className="w-full text-xs !px-3 !py-1.5"><Icon icon="mingcute:github-line" width="14" /> Code</Button>
                       </a>
@@ -91,8 +91,8 @@ export default function MoreProjects() {
           </div>
         ) : (
           <FadeIn>
-            <div className="flex flex-col items-center justify-center py-16 text-center gap-3 border border-dashed border-hairline rounded-xl">
-              <Icon icon="lucide:folder-open" className="text-primary/30" width="40" />
+            <div className="flex flex-col items-center justify-center gap-3 rounded-xl border border-dashed border-hairline py-16 text-center">
+              <Icon icon="lucide:folder-open" className="text-mute" width="36" />
               <p className="text-sm text-body">No projects found.</p>
             </div>
           </FadeIn>

@@ -20,7 +20,7 @@ export default function Terminal() {
   }, []);
 
   return (
-    <div className="w-full max-w-md rounded-xl border border-hairline-strong bg-canvas-soft/90 backdrop-blur-sm font-mono text-xs overflow-hidden green-glow">
+    <div className="w-full max-w-md overflow-hidden rounded-xl border border-hairline-strong bg-canvas-soft font-mono text-xs">
       <div className="flex items-center gap-1.5 border-b border-hairline px-4 py-2.5 bg-canvas-card/50">
         <span className="h-3 w-3 rounded-full bg-red-500/80" />
         <span className="h-3 w-3 rounded-full bg-yellow-500/80" />

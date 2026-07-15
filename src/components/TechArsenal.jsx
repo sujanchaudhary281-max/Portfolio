@@ -33,26 +33,25 @@ export default function TechArsenal() {
   const [tab, setTab] = useState('Frontend');
 
   return (
-    <section className="relative py-24 sm:py-32">
-      <div className="absolute top-1/2 left-1/2 -z-10 h-[400px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/4 blur-[120px]" />
-
-      <div className="mx-auto max-w-6xl px-6">
-        <div className="text-center mb-12">
-          <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl" style={{ letterSpacing: '-0.025em' }}>
-            Tech <span className="gradient-text">Arsenal</span>
+    <section className="border-b border-hairline py-20 sm:py-24">
+      <div className="mx-auto max-w-5xl px-6">
+        <div className="mb-12 max-w-xl">
+          <p className="mb-3 text-xs font-medium uppercase tracking-[0.14em] text-primary">Stack</p>
+          <h2 className="font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">
+            Tech arsenal
           </h2>
-          <p className="mt-3 text-sm text-body max-w-md mx-auto">Tools and frameworks I use to build production-ready products.</p>
+          <p className="mt-3 text-sm leading-relaxed text-body">Tools and frameworks I use to build production-ready products.</p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-2.5 mb-12">
+        <div className="mb-8 flex flex-wrap gap-2">
           {categories.map((c) => (
             <button
               key={c}
               onClick={() => setTab(c)}
-              className={`rounded-pill px-5 py-2.5 text-sm font-semibold transition-all duration-300 ${
+              className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors duration-200 ${
                 tab === c
-                  ? 'bg-primary text-canvas btn-glow scale-[1.02]'
-                  : 'border border-hairline text-body hover:text-ink hover:border-hairline-strong hover:bg-primary/5'
+                  ? 'bg-primary text-canvas'
+                  : 'border border-hairline text-body hover:border-hairline-strong hover:text-ink'
               }`}
             >
               {c}
@@ -60,13 +59,13 @@ export default function TechArsenal() {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {skills[tab].map((s) => (
-            <Card key={s.name} className="flex items-center gap-4 group">
-              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/5 border border-hairline group-hover:border-primary/30 group-hover:bg-primary/10 transition-all">
-                <Icon icon={s.icon} width="26" height="26" />
+            <Card key={s.name} className="flex items-center gap-4">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-hairline bg-white/[0.02]">
+                <Icon icon={s.icon} width="24" height="24" />
               </div>
-              <span className="text-sm font-semibold text-ink">{s.name}</span>
+              <span className="text-sm font-medium text-ink">{s.name}</span>
             </Card>
           ))}
         </div>

@@ -4,17 +4,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#FFE566',
-        'primary-dark': '#F5C800',
-        'primary-light': '#FFF0A0',
-        ink: '#fefce8',
-        body: '#fef9c3',
-        mute: '#fde047',
-        canvas: '#0a0a02',
-        'canvas-soft': '#1a1a07',
-        'canvas-card': '#21210a',
-        hairline: 'rgba(255,229,102,0.12)',
-        'hairline-strong': 'rgba(255,229,102,0.3)',
+        // Accent — used sparingly, for emphasis and interactive affordances only.
+        primary: '#FACC15',
+        'primary-dark': '#EAB308',
+        'primary-light': '#FDE047',
+        // Neutral text hierarchy carries the layout; the accent does not.
+        ink: '#f4f4f5',
+        body: '#a1a1aa',
+        mute: '#71717a',
+        // Surfaces — true neutrals, subtly stepped.
+        canvas: '#0b0b0d',
+        'canvas-soft': '#111113',
+        'canvas-card': '#141416',
+        hairline: 'rgba(255,255,255,0.07)',
+        'hairline-strong': 'rgba(255,255,255,0.13)',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
@@ -22,27 +25,16 @@ export default {
         mono: ['ui-monospace', 'SFMono-Regular', 'monospace'],
       },
       borderRadius: {
-        sm: '6px',
-        md: '8px',
-        lg: '12px',
-        xl: '16px',
-        '2xl': '20px',
+        sm: '4px',
+        md: '6px',
+        lg: '8px',
+        xl: '10px',
+        '2xl': '12px',
         pill: '100px',
       },
       boxShadow: {
-        'card': '0 0 0 1px rgba(255,229,102,0.08), 0 4px 12px rgba(0,0,0,0.4)',
-        'card-hover': '0 0 0 1px rgba(255,229,102,0.2), 0 8px 30px rgba(255,229,102,0.08), 0 12px 40px rgba(0,0,0,0.4)',
-        'glow': '0 0 30px rgba(255,229,102,0.2), 0 0 60px rgba(255,229,102,0.05)',
-        'glow-lg': '0 0 50px rgba(255,229,102,0.25), 0 0 100px rgba(255,229,102,0.1)',
-      },
-      animation: {
-        'float': 'float 6s ease-in-out infinite',
-      },
-      keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-8px)' },
-        },
+        'card': '0 1px 2px rgba(0,0,0,0.3)',
+        'card-hover': '0 4px 16px -4px rgba(0,0,0,0.5)',
       },
     },
   },
