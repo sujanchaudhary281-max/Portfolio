@@ -73,9 +73,13 @@ export default function MoreProjects() {
                     <h3 className="mb-1 font-display text-base font-semibold text-ink">{p.title}</h3>
                     <p className="mb-3 line-clamp-2 text-xs leading-relaxed text-body">{p.description}</p>
                     <div className="mt-auto flex gap-2 pt-1">
-                      <a href={p.githubLink} target="_blank" rel="noopener noreferrer" className="flex-1">
-                        <Button variant="secondary" className="w-full text-xs !px-3 !py-1.5"><Icon icon="mingcute:github-line" width="14" /> Code</Button>
-                      </a>
+                      {p.githubLink ? (
+                        <a href={p.githubLink} target="_blank" rel="noopener noreferrer" className="flex-1">
+                          <Button variant="secondary" className="w-full text-xs !px-3 !py-1.5"><Icon icon="mingcute:github-line" width="14" /> Code</Button>
+                        </a>
+                      ) : (
+                        <Button disabled variant="secondary" className="flex-1 text-xs !px-3 !py-1.5 opacity-40 cursor-not-allowed"><Icon icon="mingcute:github-line" width="14" /> Code</Button>
+                      )}
                       {p.liveLink ? (
                         <a href={p.liveLink} target="_blank" rel="noopener noreferrer" className="flex-1">
                           <Button className="w-full text-xs !px-3 !py-1.5">Live <Icon icon="lucide:external-link" width="12" /></Button>

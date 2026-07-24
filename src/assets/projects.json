@@ -10,29 +10,38 @@
     },
     {
         "id": 2,
-        "title": "Sujan.dev blog",
-        "description": "A full-stack blogging platform with AI-powered content suggestions, user authentication via OAuth, and a rich text editor for publishing articles.",
-        "imgUrl": "https://64.media.tumblr.com/themes/screenshots/sonBy1pX1YoDmioG_o8.png",
-        "techStacks": "openai, React, node, express, mongodb, OAUTH",
+        "title": "Sujanship blog",
+        "description": "A blog application where I will post about different categories.",
+        "imgUrl": "/projectsImage/sujanship_blog_thumbnail.png",
+        "techStacks": "React.js, Node.js, Express.js, MongoDB, Gemini AI",
         "githubLink": "https://github.com/Sujan299/blog_app",
-        "liveLink": ""
+        "liveLink": "#"
     },
     {
         "id": 3,
-        "title": "Typing application",
-        "description": "A real-time multiplayer typing speed test app with live leaderboard, WebSocket-based room system, and competitive game modes.",
-        "imgUrl": "https://www.blog.typingspeedtestonline.com/wp-content/uploads/2021/11/screen-0.jpg",
-        "techStacks": "Web socket, SOCKET.io, OAUTH, MERN",
-        "githubLink": "https://github.com/Sujan299/type_fast_app",
-        "liveLink": ""
+        "title": "Storyassets",
+        "description": "A platform that generates screenshots for the Play Store and App Store to upload to platforms.",
+        "imgUrl": "/projectsImage/storyassets.png",
+        "techStacks": "Next.js, Google Auth",
+        "githubLink": "",
+        "liveLink": "#"
     },
     {
         "id": 4,
-        "title": "News App",
+        "title": "Ecommerce Application",
         "description": "A dynamic news aggregation platform with real-time updates, category filtering, JWT authentication, and personalized reading feeds.",
-        "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcXIMNLyX4OaYpEQkjrrcLw9MBeP58i9HuRA&s",
+        "imgUrl": "/projectsImage/ecom.png",
         "techStacks": "JWT, Web socket, OAUTH, MERN stack",
-        "githubLink": "https://github.com/Sujan299/NPL-news",
-        "liveLink": ""
+        "githubLink": "",
+        "liveLink": "https://sajilolife.com/"
+    },
+    {
+        "id": 5,
+        "title": "B and B | Education portal",
+        "description": "A dynamic news aggregation platform with real-time updates, category filtering, JWT authentication, and personalized reading feeds.",
+        "imgUrl": "/projectsImage/bandb.png",
+        "techStacks": "JWT, Web socket, OAUTH, MERN stack",
+        "githubLink": "",
+        "liveLink": "https://bandbedutech.com/"
     }
 ]

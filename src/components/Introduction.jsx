@@ -1,6 +1,6 @@
 import React from 'react'
 import myImage from '../../public/myImage.png'
-const resumeUrl = "https://portfolio-nextjs-zeta-one.vercel.app/resume/resume.pdf"
+const resumeUrl = `${import.meta.env.BASE_URL}resume/resume.pdf`
 const Introduction = () => {
     const downloadResume = (url)=>{
         const fileName=url.split("/").pop();

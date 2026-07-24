@@ -18,8 +18,16 @@ const Projects = () => {
             <h1 className='text-2xl my-3'>{item.title}</h1>
             <p><span className='text-lg playFairFont'>Tech stacks : </span><span className='opacity-50'>{item.techStacks}</span></p>
             <div className='my-3 flex justify-between gap-4'>
-              <a href={item.githubLink} target='_blank' className='bg-medium_dark px-5 py-1 rounded-sm flex gap-2'><span>Github</span> <span><Icon icon="mingcute:github-line" className='inline mr-1 text-emerald-500' height={24} /></span></a>
-              <a href={item.liveLink} target='_blank' className='bg-medium_dark px-5 py-1 rounded-sm flex justify-center items-center gap-2'><span>Live</span><Icon icon="ic:outline-arrow-right-alt" width="24" height="24" style={{ marginTop: "3px" }} /></a>
+              {item.githubLink ? (
+                <a href={item.githubLink} target='_blank' rel='noopener noreferrer' className='bg-medium_dark px-5 py-1 rounded-sm flex gap-2'><span>Github</span> <span><Icon icon="mingcute:github-line" className='inline mr-1 text-emerald-500' height={24} /></span></a>
+              ) : (
+                <span className='bg-medium_dark px-5 py-1 rounded-sm flex gap-2 opacity-40 cursor-not-allowed text-gray-400'><span>Github</span> <span><Icon icon="mingcute:github-line" className='inline mr-1 text-emerald-500 opacity-50' height={24} /></span></span>
+              )}
+              {item.liveLink ? (
+                <a href={item.liveLink} target='_blank' rel='noopener noreferrer' className='bg-medium_dark px-5 py-1 rounded-sm flex justify-center items-center gap-2'><span>Live</span><Icon icon="ic:outline-arrow-right-alt" width="24" height="24" style={{ marginTop: "3px" }} /></a>
+              ) : (
+                <span className='bg-medium_dark px-5 py-1 rounded-sm flex justify-center items-center gap-2 opacity-40 cursor-not-allowed text-gray-400'><span>Live</span><Icon icon="ic:outline-arrow-right-alt" width="24" height="24" style={{ marginTop: "3px" }} /></span>
+              )}
             </div>
           </div>
         })

@@ -25,7 +25,7 @@ export default function Hero() {
             <a href="#projects">
               <Button>View projects <Icon icon="lucide:arrow-down" width="16" /></Button>
             </a>
-            <a href="https://portfolio-nextjs-zeta-one.vercel.app/resume/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href={`${import.meta.env.BASE_URL}resume/resume.pdf`} download="resume.pdf" target="_blank" rel="noopener noreferrer">
               <Button variant="secondary"><Icon icon="lucide:file-text" width="16" /> Download CV</Button>
             </a>
           </div>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    text {
+      font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+      font-weight: 800;
+      font-size: 24px;
+      fill: #ffffff;
+    }
+    @media (prefers-color-scheme: light) {
+      text {
+        fill: #0f172a;
+      }
+    }
+  </style>
+  <text x="3" y="24">S</text>
+  <circle cx="23" cy="22" r="3.5" fill="#facc15" />
+</svg>
